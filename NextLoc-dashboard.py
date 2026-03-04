@@ -50,9 +50,7 @@ app = Dash(
 # MORPH, PULSE, QUARTZ, SANDSTONE, SIMPLEX, SKETCHY, SLATE, SOLAR, SPACELAB, SUPERHERO, UNITED, VAPOR, YETI, ZEPHYR.
 
 app.layout = dbc.Container(
-
     fluid=True,
-
     children=[
 
         # Titre principal
@@ -69,11 +67,8 @@ app.layout = dbc.Container(
 
         # Ligne principale : Graphique gauche / Contrôles droite
         dbc.Row(
-
-            className="g-4",  # espace horizontal entre colonnes
-
+            className="g-4",
             children=[
-
                 # Colonne gauche : carte
                 dbc.Col(
                     dbc.Card(
@@ -84,16 +79,12 @@ app.layout = dbc.Container(
                             )
                         )
                     ),
-                    md=8  # largeur 8/12
+                    md=8
                 ),
-
                 # Colonne droite : contrôles
                 dbc.Col(
                     dbc.Card(
                         dbc.CardBody([
-
-                            # html.H4("Input your touring history", className="mb-3"),
-
                             dcc.Dropdown(
                                 id="city-dropdown",
                                 options=[
@@ -103,7 +94,6 @@ app.layout = dbc.Container(
                                 placeholder="Select a location",
                                 className="mb-3"
                             ),
-
                             dbc.Button(
                                 "Add to touring history",
                                 id="add-button",
@@ -114,7 +104,6 @@ app.layout = dbc.Container(
                                     "color": "white"
                                 }
                             ),
-
                             dbc.Button(
                                 "Reset",
                                 id="reset-button",
@@ -125,28 +114,33 @@ app.layout = dbc.Container(
                                     "border": "none"
                                 }
                             ),
-
                             html.H5("Touring history", className="mt-4", style={"color": cividis_min}),
-
-                            html.Div(
-                                id="sequence-names-display",
-                                className="mt-2"
-                            ),
-
-                            html.H5("Recommendations", className="mt-4", style={"color": cividis_min}),  # mod
-                            html.Div(id="top3-display"),  # mod
-
+                            html.Div(id="sequence-names-display", className="mt-2"),
+                            html.H5("Recommendations", className="mt-4", style={"color": cividis_min}),
+                            html.Div(id="top3-display"),
                             dcc.Store(id="sequence-store")
-
                         ])
                     ),
-                    md=4  # largeur 4/12
+                    md=4
                 )
             ]
+        ),
+
+        # Footer avec nom et liens
+        dbc.Row(
+            dbc.Col(
+                html.Div([
+                    "Created by Myriam Boualami | ",
+                    html.A("LinkedIn", href="https://www.linkedin.com/in/myriam-boualami-b74115164", target="_blank"),
+                    " | ",
+                    html.A("GitHub", href="https://github.com/m-boualami", target="_blank")
+                ],
+                className="text-center text-muted mt-4 mb-2")
+            )
         )
+
     ]
 )
-
 
 @app.callback(
     Output("sequence-names-display", "children"),
@@ -266,7 +260,8 @@ def update_heatmap(idx_sequence):
             y=0,
             title=dict(text="Next location probability", side="bottom"),
             thickness=12,
-            len=0.6
+            len=0.6,
+            tickformat=".0%"
         )
     )
 
