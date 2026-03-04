@@ -8,6 +8,7 @@ run : pip install -r requirements.txt
 
 ## Run
 run : python NextLoc-dashboard.py
+
 open in browser : http://127.0.0.1:8050
 
 ## Model documentation
