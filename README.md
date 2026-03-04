@@ -1,7 +1,7 @@
 # NextLoc-dashboard
 Dashboard to inform next touring location for electronic music artists (from NextLoc GRU)
 
-
+![Dashboard Screenshot](screenshot_dashboard.png)
 
 ## Install
 run : pip install -r requirements.txt
