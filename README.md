@@ -35,4 +35,4 @@ The sampling approach overrepresents two types of artists in the model:
 - as a result, the model may be less accurate for artists whose touring patterns are concentrated outside these major cities or who follow atypical touring trajectories.
 
 ## Quirks
-In the dropdown, selections can be cities, regions, or countries. A city corresponds exactly to that location. A region represents other cities within that region not individually listed, and a country represents other cities within that country. This reflects the spatial granularity of Resident Advisor data, where not every city has a dedicated page, so events are often aggregated at the regional or national level.
+In the dropdown, selections can be cities, regions, or countries. A city corresponds exactly to that location. A region represents other cities within that region not individually listed, and a country represents other cities within that country. This reflects the spatial granularity of Resident Advisor data, where not every city has a dedicated page, so events are sometimes aggregated at the regional or national level.
