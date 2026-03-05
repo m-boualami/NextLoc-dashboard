@@ -36,3 +36,6 @@ The sampling approach overrepresents two types of artists in the model:
 
 ## Quirks
 In the dropdown, selections can be cities, regions, or countries. A city corresponds exactly to that location. A region represents other cities within that region not individually listed, and a country represents other cities within that country. This reflects the spatial granularity of Resident Advisor data, where not every city has a dedicated page, so events are sometimes aggregated at the regional or national level.
+
+## Disclaimer
+This project uses data from Resident Advisor for personal, educational, and research purposes only. No raw data is redistributed, and all content related to the raw data remains the intellectual property of Resident Advisor. This dashboard is *not* intended for commercial use, and users should comply with RA’s Terms of Use.
