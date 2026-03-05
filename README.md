@@ -24,7 +24,7 @@ Benchmark to Order-2 Markov chain:
 - top-1 acc. 55% (GRU) ; 48% (Markov)
 - top-10 acc. 80% (GRU) ; 70% (Markov)
 
-Train set sampling strategy:
+Training data sampling strategy:
 - select artists who performed at least once in 2025 in any of the following 10 cities: Berlin, Paris, Amsterdam, London, Barcelona, Lisbon, Mexico City, Los Angeles, Toronto.
 - for these artists, include their full touring history in the training set.
 
