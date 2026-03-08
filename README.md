@@ -30,7 +30,7 @@ Training data sampling strategy:
 
 ## Implications & Biases
 The sampling approach overrepresents two types of artists in the model:
-- local artists who predominantly perform in one of these 10 cities, making the model more accurate for familiar, high-density western urban regions
+- local artists who predominantly perform in one of these 10 cities, making the model more accurate for high-density western urban regions
 - frequent international performers (“jet-setters”) who tour across multiple of these cities, potentially skewing predictions towards highly mobile artists and underrepresenting smaller or regional tours
 - as a result, the model may be less accurate for artists whose touring patterns are concentrated outside these major cities or who follow atypical touring trajectories.
 
